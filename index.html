@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width,height=device-height,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,minimal-ui">
+<link rel="stylesheet" type="text/css" href="style/basic.css" />
+</head>
+<body>
+	<div class="container">
+
+		<div class="bread-nav">
+			<span class="breadText">Signed in as</span><a href="">Member</a> <img
+				src="./images/arrow.png"><a href="">Sign out</a>
+
+		</div>
+		<!-- navigator -->
+		<nav class="nav-container">
+			<div class="nav-title">Cruise</div>
+			<ul class="main-nav">
+				<li><a href="javascript:;">DASHBOARD</a></li>
+				<li><a href="javascript:;">MY CRUISE</a></li>
+				<li class="active"><a href="javascript:;">AGENTS</a></li>
+				<li><a href="javascript:;">HELP</a></li>
+			</ul>
+		</nav>
+
+		<!-- header -->
+		<div class="header">
+			<span class="header-title">Agents</span>
+			<div class="agent-type">
+				<span class="agentText">All</span>
+			</div>
+			<div class="agent-type active">
+				<span class="agentText">Physical</span>
+			</div>
+			<div class="agent-type">
+				<span class="agentText">Virtual</span>
+			</div>
+		</div>
+
+		<!--  main content-->
+		<div class="mainContent">
+			<div class="left-box">
+				<ul class="agent-list" onclick="addOrDelete(event)">
+					<li class="agentItem color1">
+						<div class="item-icon"></div>
+						<div class="item-info">
+							<div class="basic-info">
+								<span class="address">bjstdmngbgr02.thoughtworks.com</span> <span
+									class="status-info"> <span class="splite">|</span><span>idle</span><span
+									class="splite">|</span><span>192.168.1.2</span><span
+									class="splite">|</span><span>/var/lib/cruise-agent</span></span>
+							</div>
+							<div class="res-operate">
+								<!-- <a href="javascript:;" class="addResource"><span>+</span>Spacify Resource</a><span class="splite">|</span> -->
+								<!-- <a href="javascript:;" class="delResource"><span>Resource:ubuntu</span><img src="./images/delete.png"></a>
+							<a href="javascript:;" class="delResource"><span class="resource" >firefox3</span><img src="./images/delete.png"></a>
+							<a href="javascript:;" class="delResource"><span class="resource">core-duo</span><img src="./images/delete.png"></a>													 -->
+							</div>
+						</div>
+						<div class="item-status">
+							<img src="./images/deny.png">Deny
+						</div>
+					</li>
+					<li class="agentItem color2">
+						<div class="item-icon"></div>
+						<div class="item-info">
+							<div class="basic-info">
+								<span class="address">bjstdmngbgr02.thoughtworks.com</span> <span
+									class="status-info"> <span class="splite">|</span><span>idle</span><span
+									class="splite">|</span><span>192.168.1.2</span><span
+									class="splite">|</span><span>/var/lib/cruise-agent</span></span>
+							</div>
+							<div class="res-operate">
+								<!-- <a href="javascript:;" class="addResource" id="agent2"><span>+</span>Spacify Resource</a><span class="splite">|</span>
+							<span>Resource:ubuntu</span><img src="./images/delete.png">
+							<span class="resource">firefox3</span><img src="./images/delete.png">
+							<span class="resource">mysql</span><img src="./images/delete.png">
+							<span class="resource">core-duo</span><img src="./images/delete.png">	 -->
+							</div>
+						</div> <!-- <div class="item-status"><img src="./images/deny.png">Deny</div> -->
+					</li>
+					<li class="agentItem color2">
+						<div class="item-icon"></div>
+						<div class="item-info">
+							<div class="basic-info">
+								<span class="address">bjstdmngbgr02.thoughtworks.com</span> <span
+									class="status-info"> <span class="splite">|</span><span>idle</span><span
+									class="splite">|</span><span>192.168.1.2</span><span
+									class="splite">|</span><span>/var/lib/cruise-agent</span></span>
+							</div>
+							<div class="res-operate">
+								<!-- <a href="javascript:;" class="addResource" ><span>+</span>Spacify Resource</a><span class="splite">|</span>
+							<span>Resource:ubuntu</span><img src="./images/delete.png" >
+							<span class="resource" >firefox3</span><img src="./images/delete.png">
+							<span class="resource">mysql</span><img src="./images/delete.png">
+							<span class="resource">core-duo</span><img src="./images/delete.png"> -->
+							</div>
+						</div> <!-- <div class="item-status"><img src="./images/deny.png">Deny</div> -->
+					</li>
+					<li class="agentItem color1">
+						<div class="item-icon"></div>
+						<div class="item-info">
+							<div class="basic-info">
+								<span class="address">bjstdmngbgr02.thoughtworks.com</span> <span
+									class="status-info"> <span class="splite">|</span><span>idle</span><span
+									class="splite">|</span><span>192.168.1.2</span><span
+									class="splite">|</span><span>/var/lib/cruise-agent</span></span>
+							</div>
+							<div class="res-operate">
+								<!-- <a href="javascript:;"class="addResource" id="agent4"><span>+</span>Spacify Resource</a><span class="splite">|</span>
+							<span>Resource:ubuntu</span><img src="./images/delete.png">		 -->
+							</div>
+						</div>
+						<div class="item-status">
+							<img src="./images/deny.png">Deny
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="right-box">
+				<div class="right-container">
+					<div class="right-title">Summary</div>
+					<div class="right-splite"></div>
+					<div class="status-calc">
+						<div class="calcItem">
+							<span>building</span><span style="margin-left: 6em">2</span>
+						</div>
+						<div class="calcItem">
+							<span>idle</span><span style="margin-left: 8em">2</span>
+						</div>
+					</div>
+					<div class="right-title">History</div>
+					<div class="right-splite"></div>
+					<ul class="history-list">
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+						<li class="history-item">bjstdmngbgr02/Acceptance_test</li>
+
+					</ul>
+				</div>
+			</div>
+
+		</div>
+
+		<div class="addLayer">
+			<div class="addArrow"></div>
+			<div class="addContainer">
+				<div class="promptText">(separate multiple resource name with
+					commas)</div>
+				<input type="text" />
+				<div class="add-row">
+					<button onclick="addItem()">Add resource</button>
+					<button onclick="hiddenLayer()">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/operate.js"></script>
+</body>
+</html>
